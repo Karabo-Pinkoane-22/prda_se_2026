@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login | Profile Application</title> 
+    <link rel="stylesheet" href="/css/style.css"> 
+</head> 
+<body> 
+    <main class="page-container"> 
+        <section class="card"> 
+            <h1>Welcome Back</h1> 
+            <p>Sign in to manage your profile.</p> 
+ 
+            <form id="loginForm"> 
+                <div class="field"> 
+                    <label for="username">Username</label> 
+                    <input id="username" name="username" required> 
+                </div> 
+ 
+                <div class="field"> 
+                    <label for="password">Password</label> 
+                    <input id="password" name="password" type="password" required> 
+                </div> 
+ 
+                <p id="message" class="message" hidden></p> 
+                <button type="submit">Login</button> 
+            </form> 
+        </section> 
+    </main> 
+ 
+    <script src="/js/login.js"></script> 
+</body> 
+</html> 

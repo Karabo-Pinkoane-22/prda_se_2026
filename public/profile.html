@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>My Profile</title> 
+    <link rel="stylesheet" href="/css/style.css"> 
+</head> 
+<body> 
+    <main class="page-container"> 
+        <section class="card"> 
+            <div class="profile-header"> 
+                <div> 
+                    <p class="eyebrow">User Profile</p> 
+                    <h1 id="profileTitle">Loading...</h1> 
+                </div> 
+                <button id="logoutButton" class="secondary-button" type="button"> 
+                    Logout 
+                </button> 
+            </div> 
+ 
+            <form id="profileForm"> 
+                <div class="field"> 
+                    <label for="username">Username</label> 
+                    <input id="username" disabled> 
+                </div> 
+ 
+                <div class="field"> 
+                    <label for="email">Email address</label> 
+                    <input id="email" type="email" required> 
+                </div> 
+ 
+                <div class="field"> 
+                    <label for="phone">Phone number</label> 
+                    <input id="phone" inputmode="numeric" required> 
+                </div> 
+ 
+                <div class="field"> 
+                    <label for="dob">Date of birth</label> 
+                    <input id="dob" type="date" required> 
+                </div> 
+ 
+                <p id="message" class="message" hidden></p> 
+                <button type="submit">Save Changes</button> 
+            </form> 
+        </section> 
+    </main> 
+ 
+    <script src="/js/profile.js"></script> 
+</body> 
+</html> 
